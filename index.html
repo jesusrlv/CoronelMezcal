@@ -18,6 +18,8 @@
 	<link rel='stylesheet' id='laon_wine_house-styles-css' href='css/__styles.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-custom-css' href='css/custom.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
+
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <style>
 
@@ -26,16 +28,20 @@
                 font-family: 'Alegreya Sans SC', sans-serif;
                 color: white;
 	}	
+	#imgBack::before{
+		background-color: rgba(0,0,0, 0.5);
+ 
+	}
 </style>
-<body class="page page-id-4 page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide expand_content remove_margins header_style_header-2 header_position_under header_title_off menu_style_side no_layout vc_responsive">
+<body class="page page-id-4 page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide expand_content remove_margins header_style_header-2 header_position_under header_title_off menu_style_side no_layout vc_responsive" onload="cargar()">
 	<div class="body_wrap">
 		<div class="page_wrap">
-			<header class="top_panel top_panel_style_2 with_bg_image header_fullheight trx-stretch-height scheme_default" style="background-image: url(images/multimedia/back_penca.jpeg)">
+			<header id="imgBack" class="top_panel top_panel_style_2 with_bg_image header_fullheight trx-stretch-height scheme_default" style="background-image: url(images/multimedia/back_penca.jpeg);">
 				<div class="top_panel_fixed_wrap"></div>
 				<div class="top_panel_navi			 with_bg_image			scheme_dark">
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
-							<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" alt="" /></a>
+							<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
 						</div>
 					</div>
 		</div>
@@ -52,10 +58,10 @@
 				<div class="content_wrap">
 					<nav class="menu_header_nav_area menu_hover_fade">
 						<ul id="menu_header" class="menu_header_nav">
-							<li id="menu-item-485" class="menu-item menu-item-485"><a href="#"><span>Nuestro Mezcal</span></a></li>
-							<li id="menu-item-486" class="menu-item menu-item-486"><a href="#"><span>Orgullo zacatecano</span></a></li>
-							<li id="menu-item-484" class="menu-item menu-item-484"><a href="#"><span>Catálogo</span></a></li>
-							<li id="menu-item-483" class="menu-item menu-item-483"><a href="#"><span>Poemas</span></a></li>
+							<li id="menu-item-485" class="menu-item menu-item-485"><a href="#nuestroMezacal"><span>Nuestro Mezcal</span></a></li>
+							<li id="menu-item-486" class="menu-item menu-item-486"><a href="#1884"><span>Orgullo zacatecano</span></a></li>
+							<li id="menu-item-484" class="menu-item menu-item-484"><a href="#catalogo"><span>Catálogo</span></a></li>
+							<li id="menu-item-483" class="menu-item menu-item-483"><a href="#granCoronel"><span>Poemas</span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -146,6 +152,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="nuestroMezacal"></div>
 	<div class="page_content_wrap scheme_default">
 		<div class="content_wrap">
 			<div class="content">
@@ -157,7 +164,7 @@
 									<div class="wpb_wrapper">
 										<a id="sc_anchor_favourite_place" class="sc_anchor" title="Nuestro mezcal" data-icon="" data-url=""></a>
 										<div class="sc_promo sc_promo_default sc_promo_size_large">
-											<div class="sc_promo_image" style="background-image:url(images/multimedia/19111743-D146-45A0-96BC-1E82E056B6DB.jpeg);width:50%;left: 0;"></div>
+											<div class="sc_promo_image" id="imgBack" style="background-image:url(images/multimedia/19111743-D146-45A0-96BC-1E82E056B6DB.jpeg);width:50%;left: 0;"></div>
 											<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: right;">
 												<div class="sc_promo_text_inner sc_align_center">
 													<div class="sc_promo_icon" data-icon="icon-grape-3"><img src="images/multimedia/4x/logo_alone.png" alt="" width="200"></div>
@@ -185,7 +192,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="row row-no-padding row-o-full-height row-o-columns-stretch row-o-equal-height">
+						<div id="1884"></div>
+						<div class="row row-no-padding row-o-full-height row-o-columns-stretch row-o-equal-height" style="background-color: #9e2629;">
 							<div class="wpb_column vc_column_container column-12_12 vc_col-has-fill">
 								<div class="vc_column-inner vc_custom_1465806595697">
 									<div class="wpb_wrapper">
@@ -194,11 +202,11 @@
 											<div class="sc_promo_image" style="background-image:url(images/multimedia/1F5A56BB-244E-4CF7-935E-9161D4386903.jpeg);width:50%;right: 0;"></div>
 											<div class="sc_promo_text trx_addons_stretch_height" style="width: 50%;float: left;">
 												<div class="sc_promo_text_inner sc_align_center">
-													<div class="sc_promo_icon" data-icon="icon-grape-leafs"><img src="images/multimedia/4x/penca_mini.png" alt="" width="200"></div>
-													<h2 class="sc_item_title sc_promo_title">Mezcal Gran Coronel 1884 </h2>
-													<h5 class="sc_item_subtitle sc_promo_subtitle">La simbiosis que guarda este Mezcal Gran Coronel 1884 es de carácter dominante y combatiente con la añoranza y sed degustativa de preservar el arte, la gastronomía, la historia y las tradiciones de nuestro México a través del mismo.
+													<div class="sc_promo_icon" data-icon="icon-grape-leafs"><img src="images/multimedia/4x/penca_mini.png" alt="" width="200" style="filter: brightness(0) invert(1);"></div>
+													<h2 class="sc_item_title sc_promo_title" style="color:azure">Mezcal Gran Coronel 1884 </h2>
+													<h5 class="sc_item_subtitle sc_promo_subtitle" style="color:azure">La simbiosis que guarda este Mezcal Gran Coronel 1884 es de carácter dominante y combatiente con la añoranza y sed degustativa de preservar el arte, la gastronomía, la historia y las tradiciones de nuestro México a través del mismo.
 </h5>
-													<div class="sc_item_descr sc_promo_descr">Hace que el orgullo Zacatecano de lo que se produce aquí se proyecte hacia otras latitudes del mundo que han paladeado ya este elixir.
+													<div class="sc_item_descr sc_promo_descr" style="color:azure">Hace que el orgullo Zacatecano de lo que se produce aquí se proyecte hacia otras latitudes del mundo que han paladeado ya este elixir.
 </div>
 <!--													<div class="sc_item_button sc_promo_button sc_button_wrap"><a href="about-us.html" class="sc_button sc_button_simple sc_button_size_normal sc_button_icon_top"><span class="sc_button_icon"><span class="icon-down-big"></span></span><span class="sc_button_text"><span class="sc_button_title">Our Philosophy</span></span> </a>														</div>-->
 												</div>
@@ -208,6 +216,7 @@
 								</div>
 							</div>
 						</div>
+						<div id="catalogo"></div>
 						<div class="row row-no-padding row-o-full-height row-o-columns-middle">
 							<div class="wpb_column vc_column_container column-6_12">
 								<div class="vc_column-inner ">
@@ -321,7 +330,7 @@
 												<h2 class="sc_item_title sc_promo_title">Catálogo Mezcal</h2>
 												<h5 class="sc_item_subtitle sc_promo_subtitle">Características</h5>
 												<div class="sc_item_descr sc_promo_descr">Agave tequilana weber (azul)<br>
-												        Maestro mezcalero: Don Jesús Correa<br>
+												       
 												        36° grados de alcohol<br>
 												       Origen: Hiutzila, Teul de Gonzáles Ortega, Zacatecas.<br>
 												       Contenido neto: 750 ml
@@ -330,7 +339,7 @@
                                                         <div class="sc_item_descr sc_promo_descr">
                                                            Olor: agave cocido y ahumado.<br>
                                                             Vista: Cristalino con matices plateados brillantes y aperlado de buena consistencia. <br>
-												           Gusto: Notas suaves, frescas y herbales, con un toque a jalapeño.
+												           Gusto: Notas suaves, frescas y herbales.
                                                        <hr>
                                                         <h5 class="sc_item_subtitle sc_promo_subtitle">Maridaje</h5>
                                                         <div class="sc_item_descr sc_promo_descr">
@@ -349,6 +358,7 @@
 							</div>
 						</div>
 					</div>
+					
 					<div class="row row-no-padding row-o-full-height row-o-columns-stretch row-o-equal-height">
 							<div class="wpb_column vc_column_container column-12_12 vc_col-has-fill">
 								<div class="vc_column-inner vc_custom_1465806595697">
@@ -374,7 +384,7 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 								</div>
 							</div>
 						</div>
-						
+						<div id="granCoronel"></div>
 						<div class="row row-no-padding vc_custom_1466087475749 row-o-full-height row-o-columns-stretch row-o-equal-height">
 							<div class="wpb_column vc_column_container column-12_12">
 								<div class="vc_column-inner ">
@@ -598,3 +608,26 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 	<a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
 </body>
 </html>
+
+<script>
+	function cargar(){
+		Swal.fire({
+		title: '¿Eres mayor de edad?',
+		text: "Mezcal Gran Coronel",
+		icon: 'warning',
+		showCancelButton: true,
+		confirmButtonColor: '#3085d6',
+		cancelButtonColor: '#d33',
+		confirmButtonText: 'Si, soy mayor de edad',
+		cancelButtonText: 'No, soy menor de edad'
+		}).then((result) => {
+		if (result.isConfirmed) {
+			Swal.fire(
+			'Bienvenid@',
+			'Mezcal Gran Coronel',
+			'success'
+			)
+		}
+		})
+	}
+</script>
