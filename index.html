@@ -28,15 +28,43 @@
                 font-family: 'Alegreya Sans SC', sans-serif;
                 color: white;
 	}	
+	/* #imgBack{ */
+		/* background-image: url(images/multimedia/back_penca.jpeg); */
+		/* background-color: rgba(0,0,0, 0.5); */
+	/* } */
 	#imgBack::before{
-		background-color: rgba(0,0,0, 0.5);
+		background-image: url(images/multimedia/back_penca.jpeg);
+		-webkit-animation: scale 40s linear infinite;
+		animation: scale 40s linear infinite;
+
+		
  
+	}
+	#imgBack::after{
+		background-color: rgba(0,0,0, 0.5);
+
+		-webkit-animation: scale 40s linear infinite;
+		animation: scale 40s linear infinite;
+	}
+	
+	@keyframes scale {
+		0%{
+			background-color: rgba(0,0,0, 0.7);
+		}
+	50% {
+		-webkit-transform:scale(1.2);
+		-moz-transform:scale(1.2);
+		-ms-transform:scale(1.2);
+		-o-transform:scale(1.2);
+		transform:scale(1.2);
+		background-color: rgba(0,0,0, 0.7);
+	}
 	}
 </style>
 <body class="page page-id-4 page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide expand_content remove_margins header_style_header-2 header_position_under header_title_off menu_style_side no_layout vc_responsive" onload="cargar()">
 	<div class="body_wrap">
 		<div class="page_wrap">
-			<header id="imgBack" class="top_panel top_panel_style_2 with_bg_image header_fullheight trx-stretch-height scheme_default" style="background-image: url(images/multimedia/back_penca.jpeg);">
+			<header id="imgBack" class="top_panel top_panel_style_2 with_bg_image header_fullheight trx-stretch-height scheme_default">
 				<div class="top_panel_fixed_wrap"></div>
 				<div class="top_panel_navi			 with_bg_image			scheme_dark">
 					<div class="menu_main_wrap clearfix">
