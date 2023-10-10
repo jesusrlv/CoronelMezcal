@@ -2374,7 +2374,7 @@ body.menu_style_side {
 .menu_style_side .body_wrap {
   position: relative;
   overflow: hidden;
-  max-width: 100%
+  width: 100%
 }
 
 .menu_style_side .menu_side_wrap {
