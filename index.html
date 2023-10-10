@@ -458,9 +458,17 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 		</div>
 		<div class="socials_footer_wrap socials_wrap scheme_dark">
 			<div class="socials_footer_wrap_inner">
-				<span class="social_item"><a href="#" target="_blank" class="social_icons social_twitter"><span class="trx_addons_icon-twitter" style="color: aliceblue"></span></a>
-				</span><span class="social_item"><a href="#" target="_blank" class="social_icons social_facebook"><span class="trx_addons_icon-facebook" style="color: aliceblue"></span></a>
-				</span><span class="social_item"><a href="#" target="_blank" class="social_icons social_instagram"><span class="trx_addons_icon-instagram" style="color: aliceblue"></span></a>
+				<!-- <span class="social_item"><a href="#" target="_blank" class="social_icons social_twitter"><span class="trx_addons_icon-twitter" style="color: aliceblue"></span></a> -->
+				</span>
+				<span class="social_item"><a href="#" target="_blank" class="social_icons social_facebook"><span class="trx_addons_icon-facebook" style="color: aliceblue"></span></a>
+				</span>
+				<span class="social_item"><a href="#" target="_blank" class="social_icons social_instagram"><span class="trx_addons_icon-instagram" style="color: aliceblue"></span></a>
+				</span>
+				<span class="social_item"><a href="tel:+524929094895" target="_blank" class="social_icons social_whatsapp"><span class="trx_addons_icon-whatsapp" style="color: aliceblue"></span></a>
+				</span>
+				<span class="social_item"><a href="mailto:contacto@grancoronel.com" target="_blank" class="social_icons social_email"><span class="trx_addons_icon-mail" style="color: aliceblue"></span></a>
+				</span>
+				<span class="social_item"><a href="mailto:contacto@grancoronel.com" target="_blank" class="social_icons social_email"><span class="trx_addons_icon-attach" style="color: aliceblue"></span></a>
 				</span>
 			</div>
 		</div>
@@ -469,10 +477,10 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 				<nav class="menu_footer_nav_area">
 					<ul id="menu_footer" class="menu_footer_nav">
 						<li class="menu-item menu-item-143"><a href="index.html"><span>Inicio</span></a></li>
-						<li class="menu-item menu-item-675"><a href="#"><span>Nuestro mezcal</span></a></li>
-						<li class="menu-item menu-item-677"><a href="#"><span>Orgullo zacatecano</span></a></li>
-						<li class="menu-item menu-item-147"><a href="#"><span>Catálogo</span></a></li>
-						<li class="menu-item menu-item-676"><a href="#"><span>Poemas</span></a></li>
+						<li class="menu-item menu-item-675"><a href="#nuestroMezacal"><span>Nuestro mezcal</span></a></li>
+						<li class="menu-item menu-item-677"><a href="#1884"><span>Orgullo zacatecano</span></a></li>
+						<li class="menu-item menu-item-147"><a href="#catalogo"><span>Catálogo</span></a></li>
+						<li class="menu-item menu-item-676"><a href="#granCoronel"><span>Poemas</span></a></li>
 					</ul>
 				</nav>
 			</div>
@@ -515,7 +523,16 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 			'success'
 			)
 		}
-		})
+		else{
+			Swal.fire(
+			'Hasta luego',
+			'Mezcal Gran Coronel',
+			'warning'
+			).then(function() {
+    window.location = "http://nexustechstudio.com/";
+});
+	}
+})
 	}
 </script>
 
