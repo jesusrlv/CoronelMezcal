@@ -64,6 +64,23 @@
 		background-color: rgba(0,0,0, 0.7);
 	}
 	}
+
+	.swal2-html-container, .swal2-title{
+		color: white !important;
+	}
+	.logo_main{
+		display:inline-block;
+	}
+	.contenedor {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+  		justify-content: center;
+	}
+	.contenedor .logo_main {
+    width: 100%;
+}
+
 </style>
 <header>
 </header>
@@ -82,14 +99,26 @@
 				<div class="top_panel_navi			 with_bg_image			scheme_dark">
 					<div class="menu_main_wrap clearfix">
 						<div class="wrap">
-							<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
+							<div class="contenedor">
+								<div>
+									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
+								</div>
+								<div>
+									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_gran_coronel_red.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
+								</div>
+							
 						</div>
 					</div>
 		</div>
 		<div class="top_panel_title_2_wrap">
 			<div class="content_wrap">
 				<div class="top_panel_title_2">
-					<div class="top_panel_title_2_image" hidden><img src="images/laon.png" alt="" width="520" height="120"></div>
+					<div class="top_panel_title_2_image" hidden>
+						<div class="row">
+							<div class="col-6"><img src="images/laon.png" alt="" width="520" height="120"></div>
+							<div class="col-6"><img src="images/laon.png" alt="" width="520" height="120"></div>
+						</div>
+					</div>
 					    <div class="top_panel_title_2_text fuenteV"><h3 style="color: aliceblue"> Bajo este cielo resplandeciente y de rojos fulgores su suelo,<br> surge combatiente el elixir de los valientes.</h3></div>
 				</div>
 			</div>
@@ -464,11 +493,11 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 				</span>
 				<span class="social_item"><a href="https://www.instagram.com/mezcal_gran_coronel/" target="_blank" class="social_icons social_instagram"><span class="trx_addons_icon-instagram" style="color: aliceblue"></span></a>
 				</span>
+				<span class="social_item"><a href="https://www.tiktok.com/@mezcal_gran_coronel?is_from_webapp=1&sender_device=pc" target="_blank" class="social_icons social_email"><span class="trx_addons_icon-tumblr" style="color: aliceblue"></span></a>
+				</span>
 				<span class="social_item"><a href="tel:+524929094895" target="_blank" class="social_icons social_whatsapp"><span class="trx_addons_icon-whatsapp" style="color: aliceblue"></span></a>
 				</span>
 				<span class="social_item"><a href="mailto:contacto@grancoronel.com" target="_blank" class="social_icons social_email"><span class="trx_addons_icon-mail" style="color: aliceblue"></span></a>
-				</span>
-				<span class="social_item"><a href="https://www.tiktok.com/@mezcal_gran_coronel?is_from_webapp=1&sender_device=pc" target="_blank" class="social_icons social_email"><span class="trx_addons_icon-attach" style="color: aliceblue"></span></a>
 				</span>
 			</div>
 		</div>
@@ -510,6 +539,9 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 		title: '¿Eres mayor de edad?',
 		text: "Mezcal Gran Coronel",
 		icon: 'warning',
+		imageUrl: 'images/multimedia/4x/logo_alone.png',
+		imageWidth:'25%',
+		background: 'black',
 		showCancelButton: true,
 		confirmButtonColor: '#3085d6',
 		cancelButtonColor: '#d33',
