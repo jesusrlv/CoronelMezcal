@@ -538,7 +538,7 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 		Swal.fire({
 		title: '¿Eres mayor de edad?',
 		text: "Mezcal Gran Coronel",
-		icon: 'warning',
+		// icon: 'warning',
 		imageUrl: 'images/multimedia/4x/logo_alone.png',
 		imageWidth:'25%',
 		background: 'black',
@@ -549,18 +549,20 @@ El Gran Coronel Ernesto García Castañeda no solo fue un valeroso hombre combat
 		cancelButtonText: 'No, soy menor de edad'
 		}).then((result) => {
 		if (result.isConfirmed) {
-			Swal.fire(
-			'Bienvenid@',
-			'Mezcal Gran Coronel',
-			'success'
-			)
+			Swal.fire({
+			title: 'Bienvenid@',
+			background: 'black',
+			text: 'Mezcal Gran Coronel',
+			icon: 'success'
+		});
 		}
 		else{
-			Swal.fire(
-			'Hasta luego',
-			'Mezcal Gran Coronel',
-			'warning'
-			).then(function() {
+			Swal.fire({
+			title: 'Hasta luego',
+			background: 'black',
+			text: 'Mezcal Gran Coronel',
+			// icon: 'warning'
+		}).then(function() {
     window.location = "http://nexustechstudio.com/";
 });
 	}
