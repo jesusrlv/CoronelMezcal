@@ -68,9 +68,11 @@
 	.swal2-html-container, .swal2-title{
 		color: white !important;
 	}
-	.logo_main{
+	/* .logo_main{
 		display:inline-block;
-	}
+		width: 100%;
+		height: auto;
+	} */
 	.contenedor {
 		display: flex;
 		flex-wrap: wrap;
@@ -79,10 +81,18 @@
 	}
 	.contenedor .logo_main {
     width: 100%;
+	height: auto;
 }
 
-body{
+body::after{
 	background-color: rgba(0,0,0, 0.9);
+}
+@media (min-width: 320px ) and (max-width: 768px) {
+ .contenedor .logo_main{
+	
+		width: 50%;
+		height: auto;
+	}
 }
 
 </style>
@@ -105,10 +115,10 @@ body{
 						<div class="wrap">
 							<div class="contenedor">
 								<div>
-									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
+									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_alone.png" class="logo_main" alt="" /></a>
 								</div>
 								<div>
-									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_gran_coronel_red.png" class="logo_main" style="filter: grayscale(0%);" alt="" /></a>
+									<a class="logo" href="index.html"><img src="images/multimedia/4x/logo_gran_coronel_red.png" class="logo_main"  alt="" /></a>
 								</div>
 							
 						</div>
