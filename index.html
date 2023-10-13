@@ -68,11 +68,11 @@
 	.swal2-html-container, .swal2-title{
 		color: white !important;
 	}
-	/* .logo_main{
+	.logo_main{
 		display:inline-block;
-		width: 100%;
-		height: auto;
-	} */
+		/* width: 100%;
+		height: auto; */
+	}
 	.contenedor {
 		display: flex;
 		flex-wrap: wrap;
@@ -81,19 +81,18 @@
 	}
 	.contenedor .logo_main {
     width: 70%;
-	height: 70%;
+	/* height: 70%; */
 }
 
 body::after{
 	background-color: rgba(0,0,0, 0.9);
 }
 @media (min-width: 320px ) and (max-width: 768px) {
- .contenedor .logo_main{
+ .contenedor{
 	
-		width: 50%;
-		height: auto;
+	flex-direction: column;
 	}
-}
+} 
 
 </style>
 <header>
