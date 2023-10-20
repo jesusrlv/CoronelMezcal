@@ -18,6 +18,7 @@
 	<link rel='stylesheet' id='laon_wine_house-styles-css' href='css/__styles.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-custom-css' href='css/custom.css' type='text/css' media='all' />
 	<link rel='stylesheet' id='laon_wine_house-responsive-css' href='css/responsive.min.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="css/menu.css">
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
@@ -99,8 +100,20 @@ body::after{
 } 
 
 </style>
-<header>
+
+<header class="header">
+  <!-- <a href="" class="logo">CSS Nav</a> -->
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="">
+    <li><a href="#nuestroMezacal" class="fuenteV">Nuestro Mezcal</a></li>
+    <li><a href="#1884" class="fuenteV">Orgullo zacatecano</a></li>
+    <li><a href="#catalogo" class="fuenteV">Catálogo</a></li>
+    <li><a href="#granCoronel" class="fuenteV">Poemas</a></li>
+    <li><a href="#" class="fuenteV"><i class="bi bi-translate"></i> English</a></li>
+  </ul>
 </header>
+
 <body class="page page-id-4 page-template-default body_tag body_style_wide scheme_default blog_mode_page is_single sidebar_hide expand_content remove_margins header_style_header-2 header_position_under header_title_off  no_layout vc_responsive" onload="cargar()">
 	<div class="body_wrap">
 		<div class="page_wrap">
