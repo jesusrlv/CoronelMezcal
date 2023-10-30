@@ -2080,7 +2080,7 @@ body:not(.expand_content):not(.body_style_fullwide):not(.body_style_fullscreen) 
   position: relative;
   display: block;
   text-align: center;
-  margin: 0 4em
+  margin: 0;
 }
 
 .logo img {
