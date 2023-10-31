@@ -576,7 +576,7 @@ input[type="radio"]+label,input[type="checkbox"]+label {
 input[type="radio"]+label:before,input[type="checkbox"]+label:before {
   content: ' ';
   font-family: fontello;
-  display: block;
+  display: none;
   text-align: center;
   border: 1px solid #eee;
   position: absolute;
